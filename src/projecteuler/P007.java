@@ -8,7 +8,7 @@ public class P007 implements P {
 		int answer = 0;
 		loop:
 		for(int i = 3; count < 10001; i++){
-			if((i & 1) != 0 ){
+			if((i & 1) == 1){
 				for(int j = 3; j < i/2; j+=2){ //loop condition
 					if(i % j == 0){
 						continue loop;
